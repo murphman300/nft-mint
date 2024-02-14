@@ -25,6 +25,8 @@ interface NftRecord {
   metadata_asset_id: string
   metadata_licensor: string
   metadata_rarity: string
+  metadata_character: string
+  metadata_size: string
 }
 
 async function mint(item: NftRecord) {
@@ -42,11 +44,13 @@ async function mint(item: NftRecord) {
         // TODO(tom) thirdweb engine sdk has a bug where
         // the type of attributes is null, so it complains
         // if you put anything here
-        attributes: {
-          "Asset ID": item.metadata_asset_id,
-          "Licensor": item.metadata_licensor,
-          "Rarity": item.metadata_rarity,
-        },
+        attributes: [
+          { trait_type: "Asset ID", value: item.metadata_asset_id },
+          { trait_type: "Licensor", value: item.metadata_licensor },
+          { trait_type: "Rarity", value: item.metadata_rarity },
+          { trait_type: "Character", value: item.metadata_rarity },
+          { trait_type: "Size", value: item.metadata_rarity }
+        ],
       },
     }
   );
@@ -78,12 +82,10 @@ export async function POST(request: NextRequest) {
     columns: true,
   });
 
+  // console.log(records);
   for (let i = 0; i < records.length; i++) {
     await mint(records[i]);
   }
-
-  // With the file data in the buffer, you can do whatever you want with it.
-  // For this, we'll just write it to the filesystem in a new location
 
   return NextResponse.json({ success: true })
 }
