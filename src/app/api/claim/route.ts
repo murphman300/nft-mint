@@ -35,6 +35,7 @@ export async function POST(request: Request) {
         name: "Acme Inc. Superfan",
         description: "Created with thirdweb Engine",
         image: "ipfs://QmciR3WLJsf2BgzTSjbG5zCxsrEQ8PqsHK7JWGWsDSNo46/nft.png",
+        // @ts-ignore
         attributes: {
           "Asset ID": "thumbnail",
           "Licensor": "McFarlane Toys",

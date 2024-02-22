@@ -1,0 +1,42 @@
+{
+  "owner": "0x06EC1721C61CbD90a261FD4e0E417Abe13983777",
+  "metadata": {
+    "name": "Live Trivia Night 2024 #1",
+    "description": "This is a POAP for MTD users who attended one of our events in Q1 2024. These will be redeemable for subsequent perks, drops or benefits.",
+    "image": "https://d391b93f5f62d9c15f67142e43841acc.ipfscdn.io/ipfs/bafybeifx4g2pbjgtdni55a7m3uj7u2gvf6dfmqld2uusyn4nmzuwhrboz4/common.png",
+    "attributes": [
+      {
+        "trait_type": "Rarity",
+        "value": "Common"
+      },
+      {
+        "trait_type": "Character",
+        "value": "Spawn"
+      },
+      {
+        "trait_type": "Event Type",
+        "value": "Live Trivia Night 2024"
+      },
+      {
+        "trait_type": "Date",
+        "value": "2024-01-24"
+      },
+      {
+        "trait_type": "Licensor",
+        "value": "Todd McFarlane Productions"
+      },
+      {
+        "trait_type": "Host",
+        "value": "McFarlane Toys Digital"
+      },
+      {
+        "trait_type": "Location",
+        "value": "discord.gg/mtd"
+      }
+    ],
+    "id": "23",
+    "uri": "ipfs://QmfSqpnM3LsjRRssZnUYHLTJofm6cymJbZ1X5Jd8XYuixv/0"
+  },
+  "type": "ERC721",
+  "supply": "1"
+}
